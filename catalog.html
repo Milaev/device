@@ -7,7 +7,9 @@
 </head>
 <body>
 	<header class="page-header">
-		<img class="page-header-logo" src="" alt="Logo device">
+		<a class="header-logo-link" href="index.html">
+			<img class="page-header-logo" src="" alt="Logo device">
+		</a>
 		<nav class="navigation">
 			<ul class="navigation-list userbar">
 				<li class="userbar-item">
@@ -20,7 +22,10 @@
 					</div>
 				</li>
 				<li class="userbar-item">
-					<a class="entry-button" href="#">Войти</a>
+					<a class="profile" href="#">Коля Петухов</a>
+				</li>
+				<li class="userbar-item">
+					<a class="entry-button" href="#">Выйти</a>
 				</li>
 				<li class="userbar-item">
 					<a class="compare-button" href="#">Сравнить</a>
@@ -34,22 +39,22 @@
 					<a class="catalog-menu" href="catalog.html">Каталог товаров</a>
 						<ul class="catalog-submenu">
 							<li class="catalog-submenu-item">
-								<a class="catalog-submenu-link">Виртуальная реальность</a>
+								<a class="catalog-submenu-link" href="#">Виртуальная реальность</a>
 							</li>
 							<li class="catalog-submenu-item">
-								<a class="catalog-submenu-link">Моноподы для селфи</a>
+								<a class="catalog-submenu-link" href="#">Моноподы для селфи</a>
 							</li>
 							<li class="catalog-submenu-item">
-								<a class="catalog-submenu-link">Экшн-камеры</a>
+								<a class="catalog-submenu-link" href="#">Экшн-камеры</a>
 							</li>
 							<li class="catalog-submenu-item">
-								<a class="catalog-submenu-link">Фитнес-браслеты</a>
+								<a class="catalog-submenu-link" href="#">Фитнес-браслеты</a>
 							</li>
 							<li class="catalog-submenu-item">
-								<a class="catalog-submenu-link">Умные часы</a>
+								<a class="catalog-submenu-link" href="#">Умные часы</a>
 							</li>
 							<li class="catalog-submenu-item">
-								<a class="catalog-submenu-link">Квадракоптеры</a>
+								<a class="catalog-submenu-link" href="#">Квадракоптеры</a>
 							</li>
 						</ul>
 				</li>
@@ -65,8 +70,156 @@
 			</ul>
 		</nav>
 	</header>
-	<main>
-
+	<main class="catalog-content">
+		<header class="catalog-header">
+			<h1 class="catalog-title">Моноподы для селфи</h1>
+			<ul class="breadcrumbs">
+				<li class="breadcrumbs-item">
+					<a href="index.html" class="breadcrumbs-link">Главная</a>
+				</li>
+				<li class="breadcrumbs-item">
+					<a class="breadcrumbs-link" href="#">Каталог</a>
+				</li>
+				<li class="breadcrumbs-item">
+					<a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
+				</li>
+			</ul>
+		</header>
+		<section class="filters">
+			<h2 class="filters-title">Фильтр:</h2>
+			<form class="catalog-filters" action="https://echo.htmlacademy.ru/" method="get">
+				<fieldset class="filters-price">
+					<legend class="filters-price-title">Стоимость</legend>
+					<button type="button" class="range-slider slider-min">
+						<span class="visually-hidden">Минимальная граница цены</span>
+					</button>
+					<button class="range-slider slider-max">
+						<span class="visually-hidden">Максимальная граница цены</span>
+					</button>
+					<label class="min-price-label">от
+						<input type="number" class="min-price-input" name="min-price"> ₽
+					</label>
+					<label class="max-price-label"> до
+						<input type="number" class="max-price-input" name="max-price"> ₽
+					</label>
+				</fieldset>
+				<fieldset class="filters-colors">
+					<legend class="filters-colors-title">Цвет</legend>
+					<ul class="filters-colors-list">
+						<li class="filters-colors-item">
+							<input type="checkbox" id="black" name="black" checked>
+							<label for="black">Черный</label>
+						</li>
+						<li class="filters-colors-item">
+							<input type="checkbox" id="white" name="white" checked>
+							<label for="white">Белый</label>
+						</li>
+						<li class="filters-colors-item">
+							<input type="checkbox" id="blue" name="blue">
+							<label for="blue">Синий</label>
+						</li>
+						<li class="filters-colors-item">
+							<input type="checkbox" id="red" name="red">
+							<label for="red">Красный</label>
+						</li>
+						<li class="filters-colors-item">
+							<input type="checkbox" id="pink" name="pink">
+							<label for="pink">Розовый</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset class="options">
+					<legend class="options-title">Bluetooth</legend>
+					<ul class="options-select-list">
+						<li class="options-select-item">
+							<input type="radio" id="yes" name="select-options" value="yes" checked>
+							<label for="yes">Есть</label>
+						</li>
+						<li class="options-select-item">
+							<input type="radio" id="no" name="select-options" value="no">
+							<label for="no">Нет</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button class="button" type="submit">Показать</button>
+			</form>
+		</section>
+		<section class="sorting">
+			<h2 class="sorting-title">Сортировка</h2>
+			<form class="sorting-form" action="https://echo.htmlacademy.ru/" method="get">
+				<select class="sorting-type">
+					<option value="popular">Популярные</option>
+					<option value="expensive">Дорогие</option>
+					<option value="cheap">Дешевые</option>
+				</select>
+			</form>
+			<a class="sorting-link button" href="#">
+				<span class="visually-hidden">По возрастанию</span>
+			</a>
+			<a class="sorting-link button" href="#">
+				<span class="visually-hidden">По убыванию</span>
+			</a>
+		</section>
+		<section class="goods">
+			<h2 class="visually-hidden">Товары</h2>
+			<ul class="goods-list">
+				<li class="goods-item">
+					<a class="goods-item-link">
+						<img class="goods-image" src="" alt="самая простая селфи-палка">
+						<h3 class="goods-title">Любительская селфи-палка</h3>
+						<span class="goods-price">500 ₽</span>
+					</a>
+				</li>
+				<li class="goods-item">
+					<a class="goods-item-link">
+						<img class="goods-image" src="" alt="мощная крутая селфи-палка">
+						<h3 class="goods-title">Профессиональная селфи-палка</h3>
+						<span class="goods-price">1 500 ₽</span>
+					</a>
+				</li>
+				<li class="goods-item">
+					<a class="goods-item-link">
+						<img class="goods-image" src="" alt="селфи-палка поплавок">
+						<h3 class="goods-title">Непотопляемая селфи-палка</h3>
+						<span class="goods-price">2 500 ₽</span>
+					</a>
+				</li>
+				<li class="goods-item">
+					<a class="goods-item-link">
+						<img class="goods-image" src="" alt="селфи-палка с искусственной рукой">
+						<h3 class="goods-title">Селфи-палка "Следуй за мной"</h3>
+						<span class="goods-price">1 500 ₽</span>
+					</a>
+				</li>
+			</ul>
+			<!--мб внизу это кнопка, а не ссылка-->
+			<a class="goods-more-link" href="#">Загрузить ещё</a>
+		</section>
+		<div class="pagination">
+			<ul class="pagination-list">
+				<li class="pagination-item">
+					<a class="pagination-link pagination-back" href="#">Назад</a>
+				</li>
+				<li class="pagination-item">
+					<a class="pagination-link" href="#">1</a>
+				</li>
+				<li class="pagination-item">
+					<a class="pagination-link" href="#">2</a>
+				</li>
+				<li class="pagination-item">
+					<a class="pagination-link" href="#">3</a>
+				</li>
+				<li class="pagination-item">
+					<a class="pagination-link" href="#">...</a>
+				</li>
+				<li class="pagination-item">
+					<a class="pagination-link" href="#">15</a>
+				</li>
+				<li class="pagination-item">
+					<a class="pagination-link pagination-next" href="#">Вперёд</a>
+				</li>
+			</ul>
+		</div>
 	</main>
 	<footer class="footer">
 		<section class="footer-info">

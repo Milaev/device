@@ -3,12 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/styles.css">
 	<title>Device Catalog</title>
 </head>
 <body>
 	<header class="page-header">
 		<a class="header-logo-link" href="index.html">
-			<img class="page-header-logo" src="" alt="Logo device">
+			<img class="page-header-logo" src="images/logo.svg" width="145" height="36" alt="Logo device">
 		</a>
 		<nav class="navigation">
 			<ul class="navigation-list userbar">
@@ -22,21 +23,21 @@
 					</div>
 				</li>
 				<li class="userbar-item">
-					<a class="profile" href="#">Коля Петухов</a>
+					<a class="userbar-item-link profile" href="#">Коля Петухов</a>
 				</li>
 				<li class="userbar-item">
-					<a class="entry-button" href="#">Выйти</a>
+					<a class="userbar-item-link entry-button" href="#">Выйти</a>
 				</li>
 				<li class="userbar-item">
-					<a class="compare-button" href="#">Сравнить</a>
+					<a class="userbar-item-link compare-button" href="#">Сравнить</a>
 				</li>
 				<li class="userbar-item">
-					<a class="basket-button" href="#">Корзина</a>
+					<a class="userbar-item-link basket-button" href="#">Корзина</a>
 				</li>
 			</ul>
 			<ul class="navigation-list">
 				<li class="navigation-item">
-					<a class="catalog-menu" href="catalog.html">Каталог товаров</a>
+					<a class="navigation-item-link catalog-menu" href="catalog.html">Каталог товаров</a>
 						<ul class="catalog-submenu">
 							<li class="catalog-submenu-item">
 								<a class="catalog-submenu-link" href="#">Виртуальная реальность</a>
@@ -59,13 +60,13 @@
 						</ul>
 				</li>
 				<li class="navigation-item">
-					<a class="delivery-button" href="#">Доставка</a>
+					<a class="navigation-item-link delivery-button" href="#">Доставка</a>
 				</li>
 				<li class="navigation-item">
-					<a class="warranty-button" href="#">Гарантия</a>
+					<a class="navigation-item-link warranty-button" href="#">Гарантия</a>
 				</li>
 				<li class="navigation-item">
-					<a class="contacts-button" href="#">Доставка</a>
+					<a class="navigation-item-link contacts-button" href="#">Доставка</a>
 				</li>
 			</ul>
 		</nav>
@@ -141,7 +142,7 @@
 						</li>
 					</ul>
 				</fieldset>
-				<button class="button" type="submit">Показать</button>
+				<button class="btn show-btn" type="submit">Показать</button>
 			</form>
 		</section>
 		<section class="sorting">
@@ -165,35 +166,34 @@
 			<ul class="goods-list">
 				<li class="goods-item">
 					<a class="goods-item-link">
-						<img class="goods-image" src="" alt="самая простая селфи-палка">
+						<img class="goods-image" src="images/goods-1.jpg" width="360" height="380" alt="самая простая селфи-палка">
 						<h3 class="goods-title">Любительская селфи-палка</h3>
 						<span class="goods-price">500 ₽</span>
 					</a>
 				</li>
 				<li class="goods-item">
 					<a class="goods-item-link">
-						<img class="goods-image" src="" alt="мощная крутая селфи-палка">
+						<img class="goods-image" src="images/goods-2.jpg" width="360" height="380" alt="мощная крутая селфи-палка">
 						<h3 class="goods-title">Профессиональная селфи-палка</h3>
 						<span class="goods-price">1 500 ₽</span>
 					</a>
 				</li>
 				<li class="goods-item">
 					<a class="goods-item-link">
-						<img class="goods-image" src="" alt="селфи-палка поплавок">
+						<img class="goods-image" src="images/goods-3.jpg" width="360" height="380" alt="селфи-палка поплавок">
 						<h3 class="goods-title">Непотопляемая селфи-палка</h3>
 						<span class="goods-price">2 500 ₽</span>
 					</a>
 				</li>
 				<li class="goods-item">
 					<a class="goods-item-link">
-						<img class="goods-image" src="" alt="селфи-палка с искусственной рукой">
+						<img class="goods-image" src="images/goods-4.jpg" width="360" height="380" alt="селфи-палка с искусственной рукой">
 						<h3 class="goods-title">Селфи-палка "Следуй за мной"</h3>
 						<span class="goods-price">1 500 ₽</span>
 					</a>
 				</li>
 			</ul>
-			<!--мб внизу это кнопка, а не ссылка-->
-			<a class="goods-more-link" href="#">Загрузить ещё</a>
+			<button type="button" class="btn goods-more-link">Загрузить ещё</button>
 		</section>
 		<div class="pagination">
 			<ul class="pagination-list">
@@ -222,51 +222,54 @@
 		</div>
 	</main>
 	<footer class="footer">
-		<section class="footer-info">
-			<h2 class="visually-hidden">Device</h2>
-			<img class="footer-logo" src="" alt="Logo Device">
-				<address class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
-		</section>
-		<section class="footer-advantages">
-			<ul class="footer-advantages-list">
-				<li class="footer-advantages-item">
-					<a class="footer-advantages-link" href="#">Доставка</a>
-				</li>
-				<li class="footer-advantages-item">
-					<a class="footer-advantages-link" href="#">Гарантия</a>
-				</li>
-				<li class="footer-advantages-item">
-					<a class="footer-advantages-link" href="#">Кредит</a>
-				</li>
-			</ul>
-		</section>
-		<div class="footer-phone">
-			<a class="footer-phone" href="tel:+78128121212">Тел.: +7-812-812-12-12</a>
+		<div class="footer-wrapper">
+			<section class="footer-info">
+				<h2 class="visually-hidden">Device</h2>
+				<img class="footer-logo" src="images/logo-footer.svg" width="145" height="36" alt="Logo Device">
+					<address class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+			</section>
+			<section class="footer-advantages">
+				<ul class="footer-advantages-list">
+					<li class="footer-advantages-item">
+						<a class="footer-advantages-link" href="#">Доставка</a>
+					</li>
+					<li class="footer-advantages-item">
+						<a class="footer-advantages-link" href="#">Гарантия</a>
+					</li>
+					<li class="footer-advantages-item">
+						<a class="footer-advantages-link" href="#">Кредит</a>
+					</li>
+				</ul>
+			</section>
+			<div class="footer-phone">
+				<a class="footer-phone" href="tel:+78128121212">Тел.: +7-812-812-12-12</a>
+			</div>
+			<section class="footer-social">
+				<h2 class="visually-hidden">Ссылки на соцсети</h2>
+				<ul class="footer-social-list">
+					<li class="footer-social-item">
+						<a class="footer-social-link">
+							<img class="telegram" src="#" alt="logo telegram">
+						</a>
+					</li>
+					<li class="footer-social-item">
+						<a class="footer-social-link">
+							<img class="youtube" src="#" alt="logo youtube">
+						</a>
+					</li>
+					<li class="footer-social-item">
+						<a class="footer-social-link">
+							<img class="tweeter" src="#" alt="logo tweeter">
+						</a>
+					</li>
+				</ul>
+				<p class="copyright">Milaev Roman 2023
+					<a href="https://github.com/Milaev" class="git-creator">Github</a>
+				</p>
+				<p>Сделано в <a class="copyright-link" href="https://htmlacademy.ru">.html academy</a>
+				</p>
+			</section>
 		</div>
-		<section class="footer-social">
-			<h2 class="visually-hidden">Ссылки на соцсети</h2>
-			<ul class="footer-social-list">
-				<li class="footer-social-item">
-					<a class="footer-social-link">
-						<img class="telegram" src="#" alt="logo telegram">
-					</a>
-				</li>
-				<li class="footer-social-item">
-					<a class="footer-social-link">
-						<img class="youtube" src="#" alt="logo youtube">
-					</a>
-				</li>
-				<li class="footer-social-item">
-					<a class="footer-social-link">
-						<img class="tweeter" src="#" alt="logo tweeter">
-					</a>
-				</li>
-			</ul>
-			<p class="copyright">Milaev Roman 2023
-				<a href="https://github.com/Milaev" class="git-creator">Github</a>
-				Сделано в <a class="copyright-link" href="https://htmlacademy.ru">.html academy</a>
-			</p>
-		</section>
 	</footer>
 </body>
 </html>

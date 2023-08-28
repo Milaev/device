@@ -22,6 +22,7 @@
 
 html {
 	height: 100%;
+	min-width: 1440px;
 }
 
 body {
@@ -40,6 +41,10 @@ fieldset {
 	border: none;
 	margin: 0;
 	padding: 0;
+}
+
+img {
+	display: block;
 }
 
 .visually-hidden {
@@ -110,14 +115,14 @@ fieldset {
 }
 
 .navigation-list {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		width: 1040px;
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		align-items: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 1040px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
 .userbar-list {
@@ -285,15 +290,15 @@ fieldset {
 	display: none;
 }
 
-.features-item {
-	width: 138px;
-}
-
 .features-list {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	display: flex;
+}
+
+.features-item {
+	width: 138px;
 }
 
 .unic-feature {
@@ -389,7 +394,7 @@ fieldset {
 .delivery-notification {
 	margin-bottom: 70px;
 	background-color: #F0F0F0;
-	padding: 70px 125px;
+	padding: 40px 125px;
 }
 
 .delivery-notification-link {
@@ -494,6 +499,9 @@ fieldset {
 }
 
 .subscribe-form {
+	display: grid;
+  grid-template-columns: 1fr auto;
+  box-sizing: border-box;
 	width: 810px;
 	margin-top: 144px;
 	padding-bottom: 56px;
@@ -595,23 +603,8 @@ fieldset {
 	height: 30px;
 }
 
-.catalog-right-column {
-	width: 840px;
-}
-
 .catalog-white-wrapper {
 	background-color: #FFFFFF;
-}
-
-.catalog-goods-title {
-	font-family: "Rubik", sans-serif;
-	font-size: 18px;
-	line-height: 20px;
-	font-weight: 700;
-	color: #000000;
-	letter-spacing: -0.36px;
-	margin: 0;
-	padding: 0;
 }
 
 .filters-colors-title,
@@ -644,16 +637,41 @@ fieldset {
 	padding: 0;
 }
 
+.catalog-goods-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	padding: 70px 40px;
+	display: grid;
+	grid-template-columns: 360px 360px;
+	column-gap: 40px;
+	row-gap: 44px;
+}
+
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.catalog-goods-title {
+	font-family: "Rubik", sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 700;
+	color: #000000;
+	letter-spacing: -0.36px;
+	margin: 0;
+	padding: 0;
+	max-width: 226px;
+}
+
 .catalog-goods-price {
 	font-size: 18px;
 	line-height: 21px;
 }
 
-.catalog-goods-list {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	width: 840px;
+.catalog-goods-image {
+	margin-bottom: 32px;
 }
 
 .catalog-title {
@@ -663,10 +681,6 @@ fieldset {
 	line-height: 50px;
 	margin: 0;
 	padding: 0;
-}
-
-.catalog-goods-item {
-	width: 360px;
 }
 
 .pagination {

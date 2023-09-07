@@ -10,7 +10,15 @@
 	<header class="page-header">
 		<nav class="navigation">
 			<a class="header-logo-link" href="index.html">
-				<img class="page-header-logo" src="images/logo.svg" width="145" height="36" alt="Logo device">
+				<svg class="page-header-logo" aria-hidden="true" focusable="false" width="145" height="37" viewBox="0 0 145 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M27.2188 0.388916V35.6889H19.6135V33.2889C17.9124 35.1889 15.5107 36.3889 12.1084 36.3889C5.5038 36.3889 0 30.5889 0 23.0889C0 15.5889 5.5038 9.78892 12.1084 9.78892C15.5107 9.78892 18.0124 10.9889 19.6135 12.8889V0.388916H27.2188ZM19.6135 23.0889C19.6135 19.2889 17.1118 16.8889 13.6094 16.8889C10.107 16.8889 7.60524 19.2889 7.60524 23.0889C7.60524 26.8889 10.107 29.2889 13.6094 29.2889C17.1118 29.1889 19.6135 26.8889 19.6135 23.0889Z" fill="black"/>
+					<path d="M43.7298 29.5888C45.8313 29.5888 47.5325 28.7888 48.5332 27.6888L54.6374 31.1888C52.1356 34.5888 48.4331 36.3888 43.6298 36.3888C35.0238 36.3888 29.6201 30.5888 29.6201 23.0888C29.6201 15.5888 35.0238 9.78882 43.0294 9.78882C50.4345 9.78882 55.8382 15.4888 55.8382 23.0888C55.8382 24.1888 55.7381 25.1888 55.538 26.0888H37.6256C38.6263 28.6888 40.9279 29.5888 43.7298 29.5888ZM48.333 20.4888C47.5325 17.5888 45.2309 16.4888 42.9293 16.4888C40.0273 16.4888 38.126 17.8888 37.4255 20.4888H48.333Z" fill="black"/>
+					<path d="M82.1563 10.489L72.8499 35.689H64.2439L54.9375 10.489H63.3433L68.647 26.489L73.9506 10.489C73.9506 10.489 82.1563 10.489 82.1563 10.489Z" fill="black"/>
+					<path d="M83.458 10.489H91.0633V35.689H83.458V10.489Z" fill="black"/>
+					<path d="M93.665 23.0888C93.665 15.5888 99.369 9.78882 107.074 9.78882C111.978 9.78882 116.281 12.3888 118.482 16.2888L111.878 20.0888C110.977 18.2888 109.176 17.2888 106.974 17.2888C103.672 17.2888 101.27 19.6888 101.27 23.0888C101.27 26.5888 103.672 28.8888 106.974 28.8888C109.176 28.8888 111.077 27.7888 111.878 26.0888L118.482 29.8888C116.381 33.7888 112.078 36.3888 107.074 36.3888C99.369 36.3888 93.665 30.5888 93.665 23.0888Z" fill="black"/>
+					<path d="M132.892 29.5888C134.993 29.5888 136.695 28.7888 137.695 27.6888L143.799 31.1888C141.298 34.5888 137.595 36.3888 132.792 36.3888C124.186 36.3888 118.782 30.5888 118.782 23.0888C118.782 15.5888 124.286 9.78882 132.191 9.78882C139.597 9.78882 145 15.4888 145 23.0888C145 24.1888 144.9 25.1888 144.7 26.0888H126.788C127.788 28.6888 130.09 29.5888 132.892 29.5888ZM137.595 20.4888C136.795 17.5888 134.493 16.4888 132.191 16.4888C129.289 16.4888 127.388 17.8888 126.688 20.4888H137.595Z" fill="black"/>
+					<path d="M83.458 0.388916V10.4889L91.0633 0.388916H83.458Z" fill="#510094"/>
+				</svg>					
 			</a>
 			<div class="nav-wrapper">
 				<ul class="userbar-list">
@@ -19,8 +27,8 @@
 							<label class="search-bar-icon" for="search">
 								<span class="visually-hidden">Поиск</span>
 							</label>
-							<input class="search-bar" type="search" id="search" placeholder="Текст поиска">
-							<a class="search-bar-button" href="#">Найти</a>
+							<input class="search-bar" type="search" id="search" placeholder="Поиск по сайту">
+							<a class="search-bar-button" href="#" disabled>Найти</a>
 						</div>
 					</li>
 					<li class="userbar-item">
@@ -35,7 +43,9 @@
 				</ul>
 				<ul class="navigation-list">
 					<li class="navigation-item">
-						<a class="navigation-item-link catalog-menu" href="catalog.html">Каталог товаров</a>
+						<a class="navigation-item-link catalog-menu" href="catalog.html">Каталог товаров
+							<!-- <svg class="pre" width="50" height="51" fill="none" xmlns="http://www.w3.org/2000/svg"><circle opacity=".3" cx="25" cy="25.39" r="24" stroke="#000" stroke-width="2"/><g opacity=".3" clip-path="url(#a)"><path d="M33 24.39h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(17 17.39)" d="M0 0h16v16H0z"/></clipPath></defs></svg> -->
+						</a>
 							<ul class="catalog-submenu">
 								<li class="catalog-submenu-item">
 									<a class="catalog-submenu-link" href="#">Виртуальная реальность</a>
@@ -74,12 +84,12 @@
 		<div class="page-container">
 			<section class="slider">
 				<h2 class="visually-hidden">Популярные товары</h2>
-				<div class="slide" id="slide1">
-					<button class="slider-button slider-back" type="button">
+				<div class="slide slide-1" id="slide1">
+					<button class="slider-button slider-back visually-hidden" type="button">
 						<span class="visually-hidden">Назад</span>
 					</button>
 					<img class="slide-image first-slide" src="images/quadcopter-slide.png" width="560" height="560" alt="Черный квадракоптер с лазером">
-					<button class="slider-button slider-next" type="button">
+					<button class="slider-button slider-next visually-hidden" type="button">
 						<span class="visually-hidden">Вперёд</span>
 					</button>
 					<div class="slide-desc">
@@ -87,8 +97,7 @@
 						<h3 class="slide-title">Порхает как бабочка, жалит как пчела!</h3>
 						<p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 						<div class="remote-container">
-							<a class="btn slide-btn" href="#">Подробнее</a>
-							<!--вероятно ещё в каждый слайд эти кнопки надо вставить-->
+							<a class="btn btn-style btn-slider" href="#">Подробнее</a>
 							<div>
 								<input type="radio" id="btn-1" name="toggle" checked>
 								<input type="radio" id="btn-2" name="toggle">
@@ -97,98 +106,119 @@
 						</div>
 						<ul class="features-list">
 							<li class="features-item">
-								<span class="unic-feature">800 м</span>
+								<p class="unic-feature">800 м</p>
 								<span class="unic-feature-description">Дальность полета</span>
 							</li> 
 							<li class="features-item">
-								<span class="unic-feature">50 м</span>
+								<p class="unic-feature">50 м</p>
 								<span class="unic-feature-description">Радиус поражения</span>
 							</li>
 						</ul>
 					</div>
 				</div>
 				<div class="slide slide-2" id="slide2">
-					<button class="slider-button slider-back" type="button">
+					<button class="slider-button slider-back visually-hidden" type="button">
 						<span class="visually-hidden">Назад</span>
 					</button>
 					<img class="slide-image second-slide" src="images/fitnes-slide.png" width="560" height="560" alt="Черный фитнес-браслет">
-					<button class="slider-button slider-next" type="button">
+					<button class="slider-button slider-next visually-hidden" type="button">
 						<span class="visually-hidden">Вперёд</span>
 					</button>
 					<div class="slide-desc">
 						<p class="counter">02</p>
 						<h3 class="slide-title">Худеем правильно!</h3>
 						<p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-						<a class="btn slide-btn" href="#">Подробнее</a>
+						<div class="remote-container">
+							<a class="btn btn-style btn-slider" href="#">Подробнее</a>
+							<div>
+								<input type="radio" id="btn-1" name="toggle">
+								<input type="radio" id="btn-2" name="toggle">
+								<input type="radio" id="btn-3" name="toggle">
+							</div>
+						</div>
 						<ul class="features-list">
 							<li class="features-item">
-								<span class="unic-feature">48 часов</span>
+								<p class="unic-feature">48 часов</p>
 								<span class="unic-feature-description">Без подзарядки</span>
 							</li> 
 						</ul>
 					</div>
 				</div>
 				<div class="slide slide-3" id="slide3">
-					<button class="slider-button slider-back" type="button">
+					<button class="slider-button slider-back visually-hidden" type="button">
 						<span class="visually-hidden">Назад</span>
 					</button>
 					<img class="slide-image third-slide" src="images/selfi-slide.png" width="560" height="560" alt="3 состояния селфи-палки">
-					<button class="slider-button slider-next" type="button">
+					<button class="slider-button slider-next visually-hidden" type="button">
 						<span class="visually-hidden">Вперёд</span>
 					</button>
 					<div class="slide-desc">
 						<p class="counter">03</p>
 						<h3 class="slide-title">Делай селфи, как Бен Стиллер!</h3>
 						<p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-						<a class="btn slide-btn" href="#">Подробнее</a>
+						<div class="remote-container">
+							<a class="btn btn-style btn-slider" href="#">Подробнее</a>
+							<div>
+								<input type="radio" id="btn-1" name="toggle">
+								<input type="radio" id="btn-2" name="toggle">
+								<input type="radio" id="btn-3" name="toggle">
+							</div>
+						</div>
 						<ul class="features-list">
 							<li class="features-item">
-								<span class="unic-feature">8,5 м</span>
+								<p class="unic-feature">8,5 м</p>
 								<span class="unic-feature-description">Длина палки</span>
 							</li> 
 							<li class="features-item">
-								<span class="unic-feature">5 кг</span>
+								<p class="unic-feature">5 кг</p>
 								<span class="unic-feature-description">Вес палки</span>
 							</li>
 							<li class="features-item">
-								<span class="unic-feature">Карбон</span>
+								<p class="unic-feature">Карбон</p>
 								<span class="unic-feature-description">Материал</span>
 							</li>
 						</ul>
 					</div>
-				</div>
-				<div class="slider-controls">
-					<label for="btn-1"></label>
-					<label for="btn-2"></label>
-					<label for="btn-3"></label>
 				</div>
 			</section>
 			<section class="goods">
 				<h2 class="visually-hidden">Виды товаров в магазине</h2>
 				<ul class="goods-list">
 					<li class="goods-item">
-						<img class="goods-item-image" src="images/vr-goods.svg" width="160" height="160" alt="иконка очков виртуальной реальности">
-						<h3 class="goods-item-title">Виртуальная реальность</h3>
+						<a class="goods-item-link" href="#">
+							<img class="goods-item-image" src="images/vr-goods.svg" width="160" height="160" alt="иконка очков виртуальной реальности">
+							<h3 class="goods-item-title">Виртуальная реальность</h3>
+						</a>
 					</li>
 					<li class="goods-item">
-						<img class="goods-item-image" src="images/selfi-goods.svg" width="160" height="160" alt="иконка моноподов для селфи">
-						<h3 class="goods-item-title">Моноподы для селфи</h3>
+						<a class="goods-item-link" href="#">
+							<img class="goods-item-image" src="images/selfi-goods.svg" width="160" height="160" alt="иконка моноподов для селфи">
+							<h3 class="goods-item-title">Моноподы для селфи</h3>
+						</a>
 					</li>
 					<li class="goods-item">
-						<img class="goods-item-image" src="images/gopro-goods.svg" width="160" height="160" alt="иконка экшн-камеры">
-						<h3 class="goods-item-title">Экшн-камеры</h3>
+						<a class="goods-item-link" href="#">
+							<img class="goods-item-image" src="images/gopro-goods.svg" width="160" height="160" alt="иконка экшн-камеры">
+							<h3 class="goods-item-title">Экшн-камеры</h3>
+						</a>
 					</li>
 					<li class="goods-item">
-						<img class="goods-item-image" src="images/fitnes-goods.svg" width="160" height="160" alt="иконка фитнес-браслета">
-						<h3 class="goods-item-title">Фитнес-браслеты</h3>
+						<a class="goods-item-link" href="#">
+							<img class="goods-item-image" src="images/fitnes-goods.svg" width="160" height="160" alt="иконка фитнес-браслета">
+							<h3 class="goods-item-title">Фитнес-браслеты</h3>
+						</a>
 					</li>
 					<li class="goods-item">
-						<img class="goods-item-image" src="images/watch-goods.svg" width="160" height="160" alt="иконка умных часов">
-						<h3 class="goods-item-title">Умные часы</h3>
+						<a class="goods-item-link" href="#">
+							<img class="goods-item-image" src="images/watch-goods.svg" width="160" height="160" alt="иконка умных часов">
+							<h3 class="goods-item-title">Умные часы</h3>
+						</a>
 					</li>
 					<li class="goods-item">
-						<img class="goods-item-image" src="images/copter-goods.svg" width="160" height="160" alt="иконка квадракоптера">
-						<h3 class="goods-item-title">Квадрокоптеры</h3>
+						<a class="goods-item-link" href="#">
+							<img class="goods-item-image" src="images/copter-goods.svg" width="160" height="160" alt="иконка квадракоптера">
+							<h3 class="goods-item-title">Квадрокоптеры</h3>
+						</a>
 					</li>
 				</ul>
 			</section>
@@ -199,13 +229,13 @@
 				<div class="advantages-slide slide-delivery">
 					<ul class="advantages-slide-list">
 						<li class="advantages-slide-item">
-							<a class="btn advantages-link current" href="#">Доставка</a>
+							<a class="btn advantages-link advantages-link-current" href="#">Доставка</a>
 						</li>
 						<li class="advantages-slide-item">
-							<a class="btn advantages-link" href="#">Гарантия</a>
+							<a class="btn btn-style advantages-link" href="#">Гарантия</a>
 						</li>
 						<li class="advantages-slide-item">
-							<a class="btn advantages-link" href="#">Кредит</a>
+							<a class="btn btn-style advantages-link" href="#">Кредит</a>
 						</li>
 					</ul>
 					<div class="advantages-desc">
@@ -218,13 +248,13 @@
 				<div class="advantages-slide slide-warranty">
 					<ul class="advantages-slide-list">
 						<li class="advantages-slide-item">
-							<a class="btn advantages-link" href="#">Доставка</a>
+							<a class="btn btn-style advantages-link" href="#">Доставка</a>
 						</li>
 						<li class="advantages-slide-item">
-							<a class="btn advantages-link current" href="#">Гарантия</a>
+							<a class="btn advantages-link advantages-link-current" href="#">Гарантия</a>
 						</li>
 						<li class="advantages-slide-item">
-							<a class="btn advantages-link" href="#">Кредит</a>
+							<a class="btn btn-style advantages-link" href="#">Кредит</a>
 						</li>
 					</ul>
 					<div class="advantages-desc">
@@ -237,13 +267,13 @@
 				<div class="advantages-slide slide-credit">
 					<ul class="advantages-slide-list">
 						<li class="advantages-slide-item">
-							<a class="btn advantages-link" href="#">Доставка</a>
+							<a class="btn btn-style advantages-link" href="#">Доставка</a>
 						</li>
 						<li class="advantages-slide-item">
-							<a class="btn advantages-link" href="#">Гарантия</a>
+							<a class="btn btn-style advantages-link" href="#">Гарантия</a>
 						</li>
 						<li class="advantages-slide-item">
-							<a class="btn advantages-link current" href="#">Кредит</a>
+							<a class="btn advantages-link advantages-link-current" href="#">Кредит</a>
 						</li>
 					</ul>
 					<div class="advantages-desc">
@@ -258,9 +288,6 @@
 		<div class="page-container">
 			<div class="delivery-notification">
 				<a class="delivery-notification-link" href="#">Доставим редкий товар под заказ</a>
-				<a class="delivery-notification-info">
-					<span class="visually-hidden">Информация о доставке</span>
-				</a>
 			</div>
 			<section class="contact-info">
 				<h2 class="visually-hidden" hidden>Контактная информация</h2>
@@ -279,7 +306,7 @@
 							ТоксБерри
 						</li>
 					</ul>
-					<a class="btn" href="#">Подробнее о нас</a>
+					<a class="btn btn-style btn-contact" href="#">Подробнее о нас</a>
 				</div>
 				<div class="contacts">
 					<h3 class="contact-info-title">Контакты</h3>
@@ -292,7 +319,7 @@
 						<li class="schedule-item">пн—пт: с 10:00 до 22:00</li>
 						<li class="schedule-item">сб—вс: с 10:00 до 19:00</li>
 					</ul>
-					<a class="btn" href="#">Напишите нам</a>
+					<a class="btn btn-style btn-contact" href="#">Напишите нам</a>
 				</div>
 			</section>
 		</div>
@@ -304,7 +331,7 @@
 					<input class="subscribe-email" type="email" placeholder="Ваш e-mail" required>
 					<button class="btn subscribe-button" type="submit">Подписаться</button> 
 				</form>
-				<span>Это бесплатно</span>
+				<span class="freecost">Это бесплатно</span>
 			</section>
 		</div>
 	</main>
@@ -312,7 +339,17 @@
 		<div class="footer-wrapper">
 			<section class="footer-info">
 				<h2 class="visually-hidden" hidden>Device</h2>
-				<img class="footer-logo" src="images/logo-footer.svg" width="145" height="36" alt="Logo Device">
+				<a class="footer-logo-link" href="index.html">
+					<svg class="footer-logo" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="145" height="36" viewBox="0 0 145 36" fill="none">
+						<path d="M27.2 0V35.3H19.6V32.9C17.9 34.8 15.5 36 12.1 36C5.5 36 0 30.2 0 22.7C0 15.2 5.5 9.4 12.1 9.4C15.5 9.4 18 10.6 19.6 12.5V0H27.2ZM19.6 22.7C19.6 18.9 17.1 16.5 13.6 16.5C10.1 16.5 7.6 18.9 7.6 22.7C7.6 26.5 10.1 28.9 13.6 28.9C17.1 28.8 19.6 26.5 19.6 22.7Z" fill="#FFC700"/>
+						<path d="M43.7 29.1999C45.8 29.1999 47.5 28.3999 48.5 27.2999L54.6 30.7999C52.1 34.1999 48.4 35.9999 43.6 35.9999C35 35.9999 29.6 30.1999 29.6 22.6999C29.6 15.1999 35 9.3999 43 9.3999C50.4 9.3999 55.8 15.0999 55.8 22.6999C55.8 23.7999 55.7 24.7999 55.5 25.6999H37.6C38.6 28.2999 40.9 29.1999 43.7 29.1999ZM48.3 20.0999C47.5 17.1999 45.2 16.0999 42.9 16.0999C40 16.0999 38.1 17.4999 37.4 20.0999H48.3Z" fill="#FFC700"/>
+						<path d="M82.1 10.1001L72.8 35.3001H64.2L54.9 10.1001H63.3L68.6 26.1001L73.9 10.1001C73.9 10.1001 82.1 10.1001 82.1 10.1001Z" fill="#FFC700"/>
+						<path d="M83.4 10.1001H91V35.3001H83.4V10.1001Z" fill="#FFC700"/>
+						<path d="M93.6 22.6999C93.6 15.1999 99.3 9.3999 107 9.3999C111.9 9.3999 116.2 11.9999 118.4 15.8999L111.8 19.6999C110.9 17.8999 109.1 16.8999 106.9 16.8999C103.6 16.8999 101.2 19.2999 101.2 22.6999C101.2 26.1999 103.6 28.4999 106.9 28.4999C109.1 28.4999 111 27.3999 111.8 25.6999L118.4 29.4999C116.3 33.3999 112 35.9999 107 35.9999C99.3 35.9999 93.6 30.1999 93.6 22.6999Z" fill="#FFC700"/>
+						<path d="M132.8 29.1999C134.9 29.1999 136.6 28.3999 137.6 27.2999L143.7 30.7999C141.2 34.1999 137.5 35.9999 132.7 35.9999C124.1 35.9999 118.7 30.1999 118.7 22.6999C118.7 15.1999 124.2 9.3999 132.1 9.3999C139.5 9.3999 144.9 15.0999 144.9 22.6999C144.9 23.7999 144.8 24.7999 144.6 25.6999H126.7C127.7 28.2999 130 29.1999 132.8 29.1999ZM137.5 20.0999C136.7 17.1999 134.4 16.0999 132.1 16.0999C129.2 16.0999 127.3 17.4999 126.6 20.0999H137.5Z" fill="#FFC700"/>
+						<path d="M83.4 0V10.1L91 0H83.4Z" fill="#FFC700"/>
+					</svg>
+				</a>
 				<address class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
 			</section>
 			<section class="footer-advantages">
@@ -333,17 +370,30 @@
 					<h2 class="visually-hidden" hidden>Ссылки на соцсети</h2>
 					<ul class="footer-social-list">
 						<li class="footer-social-item">
-							<a class="footer-social-link" href="#">
+							<a class="footer-social-link facebook" href="#">
+								<svg class="social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="#444444">
+									<circle class="social-circle" cx="20" cy="20" r="20" fill="white" fill-opacity="0.3"/>
+									<path d="M22.5 14H25V11H21.6C18.8 11 18 12.7 18 15.2V17H16V20H18V29H21V20H24.3L24.9 17H21V15.5C21 14.7 21.3 14 22.5 14Z" fill="#444444"/>
+								</svg>
 								<span class="visually-hidden">facebook</span>
 							</a>
 						</li>
 						<li class="footer-social-item">
-							<a class="footer-social-link" href="#">
+							<a class="footer-social-link insta" href="#">
+								<svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+									<circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3"/>
+									<path d="M20 22C21.1046 22 22 21.1046 22 20C22 18.8954 21.1046 18 20 18C18.8954 18 18 18.8954 18 20C18 21.1046 18.8954 22 20 22Z" fill="#444444"/>
+									<path d="M26.7 13.3C25.8 12.4 24.7 12 23.3 12H16.7C13.9 12 12 13.9 12 16.7V23.3C12 24.7 12.4 25.9 13.4 26.7C14.3 27.6 15.4 28 16.7 28H23.3C24.7 28 25.9 27.6 26.7 26.7C27.5 25.8 28 24.7 28 23.3V16.7C28 15.3 27.6 14.1 26.7 13.3ZM20 24.1C17.8 24.1 15.9 22.3 15.9 20C15.9 17.7 17.8 15.9 20 15.9C22.2 15.9 24.1 17.7 24.1 20C24.1 22.3 22.2 24.1 20 24.1ZM24.6 16.7C23.9 16.7 23.3 16.2 23.3 15.4C23.3 14.6 23.8 14.1 24.6 14.1C25.3 14.1 25.9 14.7 25.9 15.4C25.9 16.1 25.3 16.7 24.6 16.7Z" fill="#444444"/>
+								</svg>
 								<span class="visually-hidden">insta</span>
 							</a>
 						</li>
 						<li class="footer-social-item">
-							<a class="footer-social-link" href="#">
+							<a class="footer-social-link twitter" href="#">
+								<svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+									<circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3"/>
+									<path d="M22.7 13.1551C24.2 12.6551 25.3 13.4551 25.9 14.2551C26.4 14.0551 27 13.8551 27.6 13.6551C27.6 14.4551 27.1 15.0551 26.8 15.2551C27.5 15.4551 28 14.8551 28 14.8551C27.9 15.7551 27.1 16.5551 26.6 16.7551C26.4 23.0551 23.8 27.1551 17.7 27.0551C17.2 27.0551 17.8 27.0551 17.3 27.0551C17 27.0551 13.6 26.6551 13 25.2551C15 25.4551 16.4 24.8551 17.1 24.1551C16.3 23.8551 14.7 23.7551 14.5 21.3551C14.8 21.5551 15 21.6551 15.6 21.5551C14.5 20.7551 13.3 20.0551 13.4 18.0551C13.7 18.3551 14.3 18.5551 14.6 18.4551C14 18.2551 12.8 15.3551 13.8 13.8551C15.4 15.5551 17.1 17.2551 20.1 17.3551C20.3 15.2551 21.1 13.8551 22.7 13.1551Z" fill="#444444"/>
+								</svg>
 								<span class="visually-hidden">twitter</span>
 							</a>
 						</li>

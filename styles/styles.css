@@ -890,6 +890,150 @@ input::placeholder {
 	margin-bottom: 18px;
 }
 
+.range-scale {
+	height: 4px;
+	background-color: #DCDCDC;
+	margin-right: 60px;
+	width: 200px;
+	margin-bottom: 11px;
+	position: relative;
+}
+
+.range-bar {
+	position: absolute;
+	height: 4px;
+	background-color: #000000;
+}
+
+.range-toggle {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 2px solid #000000;
+	background-color: #C4C4C4;
+	position: absolute;
+	cursor: pointer;
+}
+
+.range-toggle:focus-visible {
+	outline: 2px solid #AF4FFF;
+}
+
+.range-toggle:hover {
+	background-color: #CECECE;
+	border-color: rgba(0,0,0, 0.6);
+	outline: none;
+}
+
+.range-toggle:active {
+	background-color: #000000;
+	outline: none;
+}
+
+.range-toggle-min {
+	top: -8px;
+	left: -9px;
+}
+
+.range-toggle-max {
+	right: -9px;
+	top: -8px;
+}
+
+.inputs-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.control {
+	position: relative;
+	display: block;
+	padding-left: 36px;
+}
+
+.control-mark {
+	width: 16px;
+	height: 16px;
+	border: 2px solid black;
+	border-radius: 4px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+	content: "";
+	width: 7.6px;
+	height: 3px;
+	background-color: #000000;
+	position: absolute;
+	top: 8.2px;
+	left: 0.5px;
+	transform: rotate(40deg) skew(40deg);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+	content: "";
+	width: 11.5px;
+	height: 3px;
+	background-color: #000000;
+	position: absolute;
+	top: 6.4px;
+	left: 5px;
+	transform: rotate(-48deg) skew(-45deg);
+}
+
+.control-input[type="radio"] + .control-mark {
+	width: 16px;
+	height: 16px;
+	border: 2px solid #000000;
+	border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #000000;
+	content: "";
+}
+
+.price-label {
+	display: flex;
+	margin-top: 10px;
+	margin-right: 50px;
+	margin-left: -20px;
+	color: rgba(0,0,0, 0.3);
+}
+
+.price-input {
+	width: 70px;
+	margin: 0;
+	margin-left: 10px;
+	background-color: transparent;
+	border: none;
+	color: rgba(0,0,0, 0.3);
+	font-size: 15px;
+	line-height: 18px;
+	font-family: "Rubik";
+}
+
+.price-label::placeholder {
+	color: rgba(0,0,0, 0.3);
+	font-size: 15px;
+	line-height: 18px;
+	font-family: "Rubik";
+}
+
+.price-input::-webkit-outer-spin-button,
+.price-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0; 
+}
+
 .show-btn {
 	margin-top: 35px;
 	padding: 10px 47px;
@@ -903,9 +1047,30 @@ input::placeholder {
 
 .sorting-type {
 	color: #000000;
+	font: inherit;
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 400;
+	width: 159px;
+	border: none;
+	background-color: transparent;
+	appearance: none;
+	background-image: url("../images/select-arrow.svg");
+	background-repeat: no-repeat;
+	background-position: right 10px center;
+}
+
+.sorting-type:focus-visible {
+	outline: 2px solid #AF4FFF;
+	outline-offset: 5px;
+}
+
+.sorting-type:hover {
+	outline: none;
+}
+
+.sorting-type:active {
+	outline: none;
 }
 
 .sorting-form {

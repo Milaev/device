@@ -105,41 +105,64 @@
 					<form class="catalog-filters" action="https://echo.htmlacademy.ru/" method="get">
 						<fieldset class="filters-price">
 							<legend class="filters-price-title">Стоимость</legend>
-							<button type="button" class="range-slider slider-min">
-								<span class="visually-hidden">Минимальная граница цены</span>
-							</button>
-							<button class="range-slider slider-max">
-								<span class="visually-hidden">Максимальная граница цены</span>
-							</button>
-							<label class="min-price-label">от
-								<input type="number" class="min-price-input" name="min-price"> ₽
-							</label>
-							<label class="max-price-label"> до
-								<input type="number" class="max-price-input" name="max-price"> ₽
-							</label>
+							<div class="range">
+								<div class="range-scale">
+									<div class="range-bar" style="left: 0; width: 120px">
+										<button type="button" class="range-toggle range-toggle-min">
+											<span class="visually-hidden">Минимальная граница цены</span>
+										</button>
+										<button class="range-toggle range-toggle-max">
+											<span class="visually-hidden">Максимальная граница цены</span>
+										</button>
+									</div>
+								</div>
+								<div class="inputs-wrapper">
+									<label class="price-label price-label-min">от
+										<input type="number" class="price-input min-price-input" name="min-price" placeholder="0">
+									</label>
+									<label class="price-label price-label-max">до
+										<input type="number" class="price-input max-price-input" name="max-price" placeholder="5000">
+									</label>
+								</div>
+							</div>
 						</fieldset>
 						<fieldset class="filters-colors">
 							<legend class="filters-colors-title">Цвет</legend>
 							<ul class="filters-colors-list">
 								<li class="filters-colors-item">
-									<input type="checkbox" id="black" name="black" checked>
-									<label for="black">Черный</label>
+									<label class="control">
+										<input class="visually-hidden control-input" type="checkbox" name="black" checked>
+										<span class="control-mark"></span>
+										<span class="control-label">Черный</span>
+									</label>
 								</li>
 								<li class="filters-colors-item">
-									<input type="checkbox" id="white" name="white" checked>
-									<label for="white">Белый</label>
+									<label class="control">
+										<input class="visually-hidden control-input" type="checkbox" name="white" checked>
+										<span class="control-mark"></span>
+										<span class="control-label">Белый</span>
+									</label>
 								</li>
 								<li class="filters-colors-item">
-									<input type="checkbox" id="blue" name="blue">
-									<label for="blue">Синий</label>
+									<label class="control">
+										<input class="visually-hidden control-input" type="checkbox" name="blue">
+										<span class="control-mark"></span>
+										<span class="control-label">Синий</span>
+									</label>
 								</li>
 								<li class="filters-colors-item">
-									<input type="checkbox" id="red" name="red">
-									<label for="red">Красный</label>
+									<label class="control">
+										<input class="visually-hidden control-input" type="checkbox" name="red">
+										<span class="control-mark"></span>
+										<span class="control-label">Красный</span>
+									</label>
 								</li>
 								<li class="filters-colors-item">
-									<input type="checkbox" id="pink" name="pink">
-									<label for="pink">Розовый</label>
+									<label class="control">
+										<input class="visually-hidden control-input" type="checkbox" name="rose">
+										<span class="control-mark"></span>
+										<span class="control-label">Розовый</span>
+									</label>
 								</li>
 							</ul>
 						</fieldset>
@@ -147,12 +170,18 @@
 							<legend class="options-title">Bluetooth</legend>
 							<ul class="options-select-list">
 								<li class="options-select-item">
-									<input type="radio" id="yes" name="select-options" value="yes" checked>
-									<label for="yes">Есть</label>
+									<label class="control">
+										<input class="visually-hidden control-input" type="radio" name="bluetooth" value="yes" checked>
+										<span class="control-mark"></span>
+										<span class="control-label">Есть</span>
+									</label>
 								</li>
 								<li class="options-select-item">
-									<input type="radio" id="no" name="select-options" value="no">
-									<label for="no">Нет</label>
+									<label class="control">
+										<input class="visually-hidden control-input" type="radio" name="bluetooth" value="no">
+										<span class="control-mark"></span>
+										<span class="control-label">Нет</span>
+									</label>
 								</li>
 							</ul>
 						</fieldset>

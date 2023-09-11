@@ -39,31 +39,51 @@
 					</li>
 					<li class="userbar-item">
 						<a class="userbar-item-link basket-button" href="#">Корзина</a>
+						<div class="popup popup-basket">
+							<div class="popup-content">
+								<h2 class="visually-hidden">Товары в корзине</h2>
+								<ul class="basket-goods-list">
+									<li class="basket-goods-item">
+										<a class="basket-popup-link" href="#">
+											<img class="basket-goods-image" src="images/popup-image-1.png" width="39" height="43">
+											<span class="basket-goods-title">Любительская селфи-палка</span>
+										</a>
+										<button type="button" class="basket-remove-button">
+											<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+												<path d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z" fill="white"/>
+											</svg>
+											<span class="visually-hidden">Удалить из корзины</span>
+										</button>
+									</li>
+									<li class="basket-goods-item">
+										<a class="basket-popup-link" href="#">
+											<img class="basket-goods-image" src="images/popup-image-2.png" width="39" height="43">
+											<span class="basket-goods-title">Профессиональная селфи-палка</span>
+										</a>
+										<button type="button" class="basket-remove-button">
+											<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+												<path d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z" fill="white"/>
+											</svg>
+											<span class="visually-hidden">Удалить из корзины</span>
+										</button>
+									</li>
+								</ul>
+								<div class="subtotal-goods">
+									<label class="subtotal-quantity-label">Товаров:
+										<input class="subtotal-quantity-field" type="number" value="2">
+									</label>
+									<label class="subtotal-price-label">Сумма:
+										<input class="subtotal-price-field" type="number" value="2000">₽
+									</label>
+								</div>
+								<a class="button popup-basket-button" href="#">Открыть корзину</a>
+							</div>
+						</div>
 					</li>
 				</ul>
 				<ul class="navigation-list">
 					<li class="navigation-item">
 						<a class="navigation-item-link catalog-menu" href="catalog.html">Каталог товаров</a>
-							<ul class="catalog-submenu">
-								<li class="catalog-submenu-item">
-									<a class="catalog-submenu-link" href="#">Виртуальная реальность</a>
-								</li>
-								<li class="catalog-submenu-item">
-									<a class="catalog-submenu-link" href="#">Моноподы для селфи</a>
-								</li>
-								<li class="catalog-submenu-item">
-									<a class="catalog-submenu-link" href="#">Экшн-камеры</a>
-								</li>
-								<li class="catalog-submenu-item">
-									<a class="catalog-submenu-link" href="#">Фитнес-браслеты</a>
-								</li>
-								<li class="catalog-submenu-item">
-									<a class="catalog-submenu-link" href="#">Умные часы</a>
-								</li>
-								<li class="catalog-submenu-item">
-									<a class="catalog-submenu-link" href="#">Квадракоптеры</a>
-								</li>
-							</ul>
 					</li>
 					<li class="navigation-item">
 						<a class="navigation-item-link delivery-button" href="#">Доставка</a>
@@ -75,6 +95,26 @@
 						<a class="navigation-item-link contacts-button" href="#">Контакты</a>
 					</li>
 				</ul>
+				<ul class="catalog-submenu">
+					<li class="catalog-submenu-item">
+						<a class="catalog-submenu-link" href="#">Виртуальная реальность</a>
+					</li>
+					<li class="catalog-submenu-item">
+						<a class="catalog-submenu-link" href="#">Фитнес-браслеты</a>
+					</li>
+					<li class="catalog-submenu-item">
+						<a class="catalog-submenu-link" href="#">Квадракоптеры</a>
+					</li>
+					<li class="catalog-submenu-item">
+						<a class="catalog-submenu-link" href="#">Моноподы для селфи</a>
+					</li>
+					<li class="catalog-submenu-item">
+						<a class="catalog-submenu-link" href="#">Умные часы</a>
+					</li>
+					<li class="catalog-submenu-item">
+						<a class="catalog-submenu-link" href="#">Экшн-камеры</a>
+					</li>
+				</ul>
 			</div>
 		</nav>
 	</header>
@@ -83,24 +123,43 @@
 			<section class="slider">
 				<h2 class="visually-hidden">Популярные товары</h2>
 				<div class="slide slide-1" id="slide1">
-					<button class="slider-button slider-back visually-hidden" type="button">
-						<span class="visually-hidden">Назад</span>
-					</button>
-					<img class="slide-image first-slide" src="images/quadcopter-slide.png" width="560" height="560" alt="Черный квадракоптер с лазером">
-					<button class="slider-button slider-next visually-hidden" type="button">
-						<span class="visually-hidden">Вперёд</span>
-					</button>
+					<div class="slider-wrapper">
+						<img class="slide-image first-slide" src="images/quadcopter-slide.png" width="560" height="560" alt="Черный квадракоптер с лазером">
+						<div class="slider-control-button-wrapper">
+							<button class="slider-control-button slider-back" type="button">
+								<span class="visually-hidden">Назад</span>
+							</button>
+							<button class="slider-control-button slider-next" type="button">
+								<span class="visually-hidden">Вперёд</span>
+							</button>
+						</div>
+					</div>
 					<div class="slide-desc">
 						<span class="counter">01</span>
 						<h3 class="slide-title">Порхает как бабочка, жалит как пчела!</h3>
 						<p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 						<div class="remote-container">
 							<a class="btn btn-style btn-slider" href="#">Подробнее</a>
-							<div>
-								<input type="radio" id="btn-1" name="toggle" checked>
-								<input type="radio" id="btn-2" name="toggle">
-								<input type="radio" id="btn-3" name="toggle">
-							</div>
+							<ul class="slider-control-radio-list">
+								<li>
+									<label class="control">
+										<input class="visually-hidden slider-control-input" type="radio" id="btn-1" name="toggle-slide1" checked>
+										<span class="slider-control-radio"></span>
+									</label>
+								</li>
+								<li>
+									<label class="control">
+										<input class="visually-hidden slider-control-input" type="radio" id="btn-2" name="toggle-slide1">
+										<span class="slider-control-radio"></span>
+									</label>
+								</li>
+								<li>
+									<label class="control">
+										<input class="visually-hidden slider-control-input" type="radio" id="btn-3" name="toggle-slide1">
+										<span class="slider-control-radio"></span>
+									</label>
+								</li>
+							</ul>
 						</div>
 						<ul class="features-list">
 							<li class="features-item">
@@ -115,24 +174,43 @@
 					</div>
 				</div>
 				<div class="slide slide-2" id="slide2">
-					<button class="slider-button slider-back visually-hidden" type="button">
-						<span class="visually-hidden">Назад</span>
-					</button>
-					<img class="slide-image second-slide" src="images/fitnes-slide.png" width="560" height="560" alt="Черный фитнес-браслет">
-					<button class="slider-button slider-next visually-hidden" type="button">
-						<span class="visually-hidden">Вперёд</span>
-					</button>
+					<div class="slider-wrapper">
+						<img class="slide-image second-slide" src="images/fitnes-slide.png" width="560" height="560" alt="Черный фитнес-браслет">
+						<div class="slider-control-button-wrapper">
+							<button class="slider-control-button slider-back" type="button">
+								<span class="visually-hidden">Назад</span>
+							</button>
+							<button class="slider-control-button slider-next" type="button">
+								<span class="visually-hidden">Вперёд</span>
+							</button>
+						</div>
+					</div>
 					<div class="slide-desc">
 						<p class="counter">02</p>
 						<h3 class="slide-title">Худеем правильно!</h3>
 						<p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 						<div class="remote-container">
 							<a class="btn btn-style btn-slider" href="#">Подробнее</a>
-							<div>
-								<input type="radio" id="btn-1" name="toggle">
-								<input type="radio" id="btn-2" name="toggle">
-								<input type="radio" id="btn-3" name="toggle">
-							</div>
+							<ul class="slider-control-radio-list">
+								<li>
+									<label class="control">
+										<input class="visually-hidden slider-control-input" type="radio" id="btn-1" name="toggle-slide2">
+										<span class="slider-control-radio"></span>
+									</label>
+								</li>
+								<li>
+									<label class="control">
+										<input class="visually-hidden slider-control-input" type="radio" id="btn-2" name="toggle-slide2" checked>
+										<span class="slider-control-radio"></span>
+									</label>
+								</li>
+								<li>
+									<label class="control">
+										<input class="visually-hidden slider-control-input" type="radio" id="btn-3" name="toggle-slide2">
+										<span class="slider-control-radio"></span>
+									</label>
+								</li>
+							</ul>
 						</div>
 						<ul class="features-list">
 							<li class="features-item">
@@ -143,24 +221,43 @@
 					</div>
 				</div>
 				<div class="slide slide-3" id="slide3">
-					<button class="slider-button slider-back visually-hidden" type="button">
-						<span class="visually-hidden">Назад</span>
-					</button>
-					<img class="slide-image third-slide" src="images/selfi-slide.png" width="560" height="560" alt="3 состояния селфи-палки">
-					<button class="slider-button slider-next visually-hidden" type="button">
-						<span class="visually-hidden">Вперёд</span>
-					</button>
+					<div class="slider-wrapper">
+						<img class="slide-image third-slide" src="images/selfi-slide.png" width="560" height="560" alt="3 состояния селфи-палки">
+						<div class="slider-control-button-wrapper">
+							<button class="slider-control-button slider-back" type="button">
+								<span class="visually-hidden">Назад</span>
+							</button>
+							<button class="slider-control-button slider-next" type="button">
+								<span class="visually-hidden">Вперёд</span>
+							</button>
+						</div>
+					</div>
 					<div class="slide-desc">
 						<p class="counter">03</p>
 						<h3 class="slide-title">Делай селфи, как Бен Стиллер!</h3>
 						<p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
 						<div class="remote-container">
 							<a class="btn btn-style btn-slider" href="#">Подробнее</a>
-							<div>
-								<input type="radio" id="btn-1" name="toggle">
-								<input type="radio" id="btn-2" name="toggle">
-								<input type="radio" id="btn-3" name="toggle">
-							</div>
+							<ul class="slider-control-radio-list">
+								<li>
+									<label class="control">
+										<input class="visually-hidden slider-control-input" type="radio" id="btn-1" name="toggle-slide3">
+										<span class="slider-control-radio"></span>
+									</label>
+								</li>
+								<li>
+									<label class="control">
+										<input class="visually-hidden slider-control-input" type="radio" id="btn-2" name="toggle-slide3">
+										<span class="slider-control-radio"></span>
+									</label>
+								</li>
+								<li>
+									<label class="control">
+										<input class="visually-hidden slider-control-input" type="radio" id="btn-3" name="toggle-slide3" checked>
+										<span class="slider-control-radio"></span>
+									</label>
+								</li>
+							</ul>
 						</div>
 						<ul class="features-list">
 							<li class="features-item">
@@ -400,5 +497,43 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal-container modal-window-close modal-container-open">
+		<div class="modal modal-special-delivery">
+			<section class="modal-content">
+				<button class="modal-close-button">
+					<span class="visually-hidden">Закрыть</span>
+				</button>
+				<h2 class="modal-title">Доставка под заказ</h2>
+				<form class="special-delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+					<div class="field-group customers-name">
+						<label class="customers-name-label" for="name">Ваше имя:</label>
+						<input class="customers-name-field field" type="text" id="name" name="customers-name" placeholder="Введите имя">
+						<span class="advice-modal">Добавьте имя</span>
+					</div>
+					<div class="field-group customers-email">
+						<label class="customers-email-label" for="email">Ваш e-mail:</label>
+						<input class="customers-email-field field field-error" type="email" id="email" name="customers-email" value="почта" placeholder="Введите почту">
+						<span class="email-error">Забавный у вас адрес</span>
+					</div>
+					<div class="field-group customers-order">
+						<label class="order-label" for="order">Что нужно привезти:</label>
+						<input class="order-field field" type="text" id="order" name="order" placeholder="В свободной форме">
+					</div>
+					<div class="field-group quantity">
+						<label class="quantity-label" for="quantity">Количество:</label>
+						<button class="info">
+							<span class="visually-hidden">Дополнительная информация</span>
+						</button>
+						<div class="count-wrapper">
+							<input type="button" class="count count-less">
+							<input class="quantity-field field" type="number" id="quantity" name="quantity" value="1">
+							<input type="button" class="count count-more">
+						</div>
+					</div>
+					<button class="btn btn-style btn-slider btn-modal" type="submit">Отправить</button>
+				</form>
+			</section>
+		</div>
+	</div>
 </body>
 </html>

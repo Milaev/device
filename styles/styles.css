@@ -54,7 +54,7 @@ img {
 	margin: -1px;
 	padding: 0;
 	border: 0;
-	clip: rect(0 0 0 0);
+	clip: rect(0, 0, 0, 0);
 	overflow: hidden;
 }
 
@@ -476,10 +476,15 @@ input::placeholder {
 	box-sizing: border-box;
 	border: none;
 	background-color: transparent;
-	color: #FFFFFF;
 	padding: 0;
 	margin: 0;
 	outline: none;
+	color: #FFFFFF;
+	font-family: "Rubik", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
 }
 
 .subtotal-quantity-field::-webkit-outer-spin-button,
@@ -520,15 +525,6 @@ input::placeholder {
 .popup-basket-button:active {
 	color: rgba(0, 0, 0, 0.3);
 	outline: none;
-}
-
-input[type="number"] {
-	color: #FFFFFF;
-	font-family: "Rubik", sans-serif;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 20px;
 }
 
 .catalog-menu {
@@ -954,15 +950,14 @@ input[type="number"] {
 	background-position: center;
 }
 
-.delivery-notification-link:hover {
-	&::before {
-		background-color: #FFC700;
-	}
-	&::after {
-		background-image: url("../images/notifications-hover.svg");
-		background-repeat: no-repeat;
-		background-position: center;
-	}
+.delivery-notification-link:hover::after {
+	background-image: url("../images/notifications-hover.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.delivery-notification-link:hover::before {
+	background-color: #FFC700;
 }
 
 .delivery-notification-link:active {
@@ -2117,6 +2112,10 @@ input[type="text"]::placeholder {
 	background-position: center;
 	background-repeat: no-repeat;
 	cursor: pointer;
+}
+
+.count[type="button"] {
+	color: transparent;
 }
 
 .count-less {

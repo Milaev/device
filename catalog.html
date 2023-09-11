@@ -47,26 +47,6 @@
 				<ul class="navigation-list">
 					<li class="navigation-item">
 						<a class="navigation-item-link catalog-menu" href="catalog.html">Каталог товаров</a>
-							<ul class="catalog-submenu">
-								<li class="catalog-submenu-item">
-									<a class="catalog-submenu-link" href="#">Виртуальная реальность</a>
-								</li>
-								<li class="catalog-submenu-item">
-									<a class="catalog-submenu-link" href="#">Моноподы для селфи</a>
-								</li>
-								<li class="catalog-submenu-item">
-									<a class="catalog-submenu-link" href="#">Экшн-камеры</a>
-								</li>
-								<li class="catalog-submenu-item">
-									<a class="catalog-submenu-link" href="#">Фитнес-браслеты</a>
-								</li>
-								<li class="catalog-submenu-item">
-									<a class="catalog-submenu-link" href="#">Умные часы</a>
-								</li>
-								<li class="catalog-submenu-item">
-									<a class="catalog-submenu-link" href="#">Квадракоптеры</a>
-								</li>
-							</ul>
 					</li>
 					<li class="navigation-item">
 						<a class="navigation-item-link delivery-button" href="#">Доставка</a>
@@ -76,6 +56,26 @@
 					</li>
 					<li class="navigation-item">
 						<a class="navigation-item-link contacts-button" href="#">Контакты</a>
+					</li>
+				</ul>
+				<ul class="catalog-submenu">
+					<li class="catalog-submenu-item">
+						<a class="catalog-submenu-link" href="#">Виртуальная реальность</a>
+					</li>
+					<li class="catalog-submenu-item">
+						<a class="catalog-submenu-link" href="#">Фитнес-браслеты</a>
+					</li>
+					<li class="catalog-submenu-item">
+						<a class="catalog-submenu-link" href="#">Квадракоптеры</a>
+					</li>
+					<li class="catalog-submenu-item">
+						<a class="catalog-submenu-link" href="#">Моноподы для селфи</a>
+					</li>
+					<li class="catalog-submenu-item">
+						<a class="catalog-submenu-link" href="#">Умные часы</a>
+					</li>
+					<li class="catalog-submenu-item">
+						<a class="catalog-submenu-link" href="#">Экшн-камеры</a>
 					</li>
 				</ul>
 			</div>
@@ -108,20 +108,20 @@
 							<div class="range">
 								<div class="range-scale">
 									<div class="range-bar" style="left: 0; width: 120px">
-										<button type="button" class="range-toggle range-toggle-min">
+										<button class="range-toggle range-toggle-min" type="button">
 											<span class="visually-hidden">Минимальная граница цены</span>
 										</button>
-										<button class="range-toggle range-toggle-max">
+										<button class="range-toggle range-toggle-max" type="button">
 											<span class="visually-hidden">Максимальная граница цены</span>
 										</button>
 									</div>
 								</div>
 								<div class="inputs-wrapper">
 									<label class="price-label price-label-min">от
-										<input type="number" class="price-input min-price-input" name="min-price" placeholder="0">
+										<input type="number" class="price-input min-price-input" name="min-price" placeholder="0" value="0">
 									</label>
 									<label class="price-label price-label-max">до
-										<input type="number" class="price-input max-price-input" name="max-price" placeholder="5000">
+										<input type="number" class="price-input max-price-input" name="max-price" placeholder="5000" value="5000">
 									</label>
 								</div>
 							</div>

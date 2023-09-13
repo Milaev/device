@@ -165,7 +165,7 @@ img {
 	padding: 14.5px 0px;
 	width: 1040px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	flex-wrap: wrap;
 	align-items: center;
 }
@@ -188,6 +188,7 @@ img {
 	font-size: 16px;
 	line-height: 20px;
 	font-weight: 400;
+	max-width: 529px;
 }
 
 .userbar-item {
@@ -200,6 +201,7 @@ img {
 	text-decoration: none;
 	color: #000000;
 	display: block;
+	max-width: 150px;
 }
 
 .userbar-item-link:hover {
@@ -214,6 +216,12 @@ img {
 .userbar-item-link:active {
 	opacity: 0.3;
 	outline: none;
+}
+
+.navigation-item:not(:first-child){
+	max-width: 150px;
+	margin-right: 15px;
+	margin-bottom: 10px;
 }
 
 .navigation-item-link {
@@ -603,6 +611,8 @@ input::placeholder {
 
 .slider-wrapper {
 	position: relative;
+	max-width: 560px;
+	max-height: 560px;
 }
 
 .slider-control-button {
@@ -921,13 +931,14 @@ input::placeholder {
 	letter-spacing: 4px;
 }
 
-.delivery-notification-link::before {
+.delivery-notification::before {
 	content: "";
 	position: absolute;
+	box-sizing: border-box;
 	top: 0;
 	left: 0;
-	width: 47px;
-	height: 31px;
+	min-width: 125px;
+	height: 100%;
 	padding-top: 35px;
 	padding-bottom: 34px;
 	padding-left: 39px;
@@ -938,10 +949,11 @@ input::placeholder {
 	background-color: #FFE17F;
 }
 
-.delivery-notification-link::after {
+.delivery-notification::after {
 	content: "";
 	position: absolute;
-	top: 30px;
+	top: 50%;
+	transform: translateY(-50%);
 	right: 30px;
 	width: 40px;
 	height: 40px;
@@ -950,17 +962,17 @@ input::placeholder {
 	background-position: center;
 }
 
-.delivery-notification-link:hover::after {
+.delivery-notification:hover::after {
 	background-image: url("../images/notifications-hover.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.delivery-notification-link:hover::before {
+.delivery-notification:hover::before {
 	background-color: #FFC700;
 }
 
-.delivery-notification-link:active {
+.delivery-notification:active {
 	opacity: 0.3;
 }
 
@@ -1108,6 +1120,7 @@ input::placeholder {
 	margin-left: auto;
 	margin-top: 158px;
 	padding-left: 32px;
+	padding-bottom: 56px;
 	position: relative;
 }
 
@@ -1555,6 +1568,7 @@ input::placeholder {
 .pagination-list {
 	list-style-type: none;
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	margin-left: 40px;
@@ -1565,6 +1579,7 @@ input::placeholder {
 .pagination-item {
 	font-size: 16px;
 	line-height: 20px;
+	max-width: 150px;
 }
 
 .pagination-item:first-child {
@@ -1639,6 +1654,8 @@ input::placeholder {
 	padding: 15px 290px;
 	margin-left: 40px;
 	margin-right: 40px;
+	width: 760px;
+	box-sizing: border-box;
 }
 
 .catalog-goods-more-btn:focus-visible {
@@ -1823,6 +1840,7 @@ input::placeholder {
 
 .breadcrumbs {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
